@@ -1,7 +1,14 @@
-from bottle import run, route, template
+import bottle
+import datetime
 
-@route('/hello/<name>')
+
+@bottle.route('/home/<name>')
 def index(name):
-    return template('<b> Hello {{name}} </b>!', name=name)
+    return bottle.template('<b> Hello {{name}} !!!, now is {{date}}</b>', name=name, date=datetime.datetime.now())
 
-run(host='localhost', port=8080)
+@bottle.route("/testpage")
+def teste_page():
+    return "this is a test page"
+
+bottle.debug(True)
+bottle.run(host="localhost", port=8080)
