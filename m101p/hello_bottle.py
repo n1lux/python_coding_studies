@@ -8,6 +8,7 @@ def index(name):
 
 @bottle.route("/testpage")
 def teste_page():
+
     return "this is a test page"
 
 bottle.debug(True)
