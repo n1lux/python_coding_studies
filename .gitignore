@@ -2,3 +2,6 @@ mongoengine/mongoenv
 *.idea
 m101p/m101penv/
 /*/dump
+rsyscall/rsyscenv
+mysql_thread/msqltenv
+mongo_python/mongoenv
