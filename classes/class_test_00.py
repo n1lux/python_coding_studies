@@ -4,6 +4,7 @@
 
 class Test(object):
     """ Test Class """
+    attr_class = None
 
     def __init__(self, name):
         self.name = name
