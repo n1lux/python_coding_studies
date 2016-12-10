@@ -7,3 +7,5 @@ mysql_thread/msqltenv
 mongo_python/mongoenv
 *.pyc
 *.txt
+*.venv
+*.sqlavenv
